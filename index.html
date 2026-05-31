@@ -3,40 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kotisivuja ei ole vielä</title>
+    <title>3D Tulostus Kalliokoski | 4H-yritys</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
             text-align: center;
         }
         .container {
-            padding: 20px;
-            border-radius: 10px;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
             background: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        h1, h2 { color: var(--primary-color); }
+        .services { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .service-card {
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            border-top: 5px solid var(--accent-color);
         }
-        p {
+        .contact-info {
+            background: #eef9f1;
+            border-left: 5px solid var(--accent-color);
+            padding: 1.5rem;
+        }
+        .contact-link {
+            display: block;
+            margin: 10px 0;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-link:hover {
+            color: var(--accent-color);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
             color: #666;
+        }
+        .badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Kotisivuja ei ole vielä</h1>
-        <p>Työstämme parhaillaan uutta sisältöä. Tule pian takaisin!</p>
-    </div>
+<header>
+    <h1>3D Tulostus Kalliokoski</h1>
+    <p>Laadukasta 3D-mallinnusta ja tulostusta Nurmijärveltä [cite: 6]</p>
+    <span class="badge">Virallinen 4H-yritys</span>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Tervetuloa!</h2>
+        <p>Olen Festus Kalliokoski, puhelias ja osaava 3D-tulostuksen ammattilainen[cite: 4, 13]. Toteutan asiakkaiden toiveet luotettavasti ja teen kaiken työn itse mallinnuksesta valmiiseen tuotteeseen asti[cite: 21, 31, 34].</p>
+    </section>
+
+    <section>
+        <h2>Mitä tarjoan?</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>3D-Tulostus</h3>
+                <p>Valmistan esineitä ja varaosia asiakkaan tarpeisiin kestävällä muovilla[cite: 17, 27].</p>
+            </div>
+            <div class="service-card">
+                <h3>3D-Mallinnus</h3>
+                <p>Teen digitaaliset mallit ideastasi, jotta ne voidaan tulostaa fyysisiksi esineiksi[cite: 17].</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Miten tilaat?</h2>
+        <ul>
+            <li><strong>Ota yhteyttä:</strong> Kerro ideasi tai lähetä valmis tiedosto[cite: 31, 38].</li>
+            <li><strong>Hinnoittelu:</strong> Hinta koostuu mallinnusajasta, tulostusajasta ja materiaalikuluista[cite: 19].</li>
+            <li><strong>Toimitus:</strong> Nouto tai postitus kaikkialle Suomeen[cite: 38].</li>
+            <li><strong>Maksutavat:</strong> MobilePay, tilisiirto tai lasku[cite: 38].</li>
+        </ul>
+    </section>
+
+    <section class="contact-info">
+        <h2>Ota yhteyttä</h2>
+        <p>Etsitkö apua yritykselle tai yksityishenkilönä? [cite: 25] Ota rohkeasti yhteyttä!</p>
+        
+        <a href="mailto:3DtulostusKalliokoski@proton.me" class="contact-link">📧 Sähköposti: 3DtulostusKalliokoski@proton.me</a>
+        <a href="https://www.instagram.com/3dtulostuskalliokoski" target="_blank" class="contact-link">📸 Instagram: @3dtulostuskalliokoski</a>
+        
+        <p>Palvelen asiakkaita pääosin hyvin ja toteutan pyynnöt huolella[cite: 31, 34].</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 3D Tulostus Kalliokoski | Yhteistyössä: Tuusulan 4H [cite: 3, 5, 39]</p>
+</footer>
 
 </body>
 </html>
